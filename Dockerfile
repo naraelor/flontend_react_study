@@ -2,15 +2,13 @@
 FROM node:18-alpine
 
 # 作業ディレクトリを設定
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # package.json と package-lock.json をコピー
 COPY package*.json ./
 
-RUN ls -l /usr/src/app
-
 # 依存関係をインストール
-RUN npm install
+RUN npm install --verbose
 
 # 必要な追加依存関係（PostCSS や Autoprefixer）をインストール
 RUN npm install postcss autoprefixer
@@ -20,6 +18,8 @@ COPY . .
 
 # アプリをビルド
 RUN npm run build
+
+EXPOSE 3000
 
 # アプリを起動
 CMD ["npm", "run", "start"]
