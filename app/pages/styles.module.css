@@ -1,0 +1,33 @@
+/* styles.css */
+.my-button {
+  background-color: #0070f3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.my-button:hover {
+  background-color: #005bb5;
+}
+
+.about-page {
+  padding: 20px;
+  background-color: #a3a2a2;
+}
+
+.about-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.home-page {
+  text-align: center;
+  margin: 20px;
+}
+
+.home-title {
+  font-size: 28px;
+  color: #0070f3;
+}
