@@ -51,9 +51,9 @@ export default function Home() {
     <div className={styles['home-page']}>
       <h1 className={styles['home-title']}>Welcome to Next.js with a Separate Backend!</h1>
       <p>{helloMessage}</p>
-      <p>{goodbyeMessage}</p>
       <MyButton />
       <AboutPage />
+      <p>{goodbyeMessage}</p>
     </div>
   );
 }
